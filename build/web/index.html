@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+Author     : Portes
+-->
+<html>
+    <head>
+        <title>Veiculos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #carro {
+                text-align: center;
+                
+            }
+            #div_resultado {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="carro">
+            <form action="veiculos.jsp" method="get" target="resultado">
+            <h1>Carro de Passeio</h1>
+            Modelo: <input type="text" name="modelo"></br></br>
+            Chassis: <input type="text" name="chassis"></br></br>
+            Placa:  &nbsp;&nbsp;&nbsp; <input type="text" name="placa" placeholder="Ex.: ABC-000"></br></br>
+            Combustivel: <input type="text" name="combustivel"></br></br>
+            Passageiros:<input type="text" name="passageiro"></br></br>
+            Automatico: <input type="text" placeholder="Digite sim ou não" name="automatico"></br></br>
+               
+                <input type="submit" value="Enviar"></br></br>
+            </form>
+            
+         
+        </div>
+        
+        <div id="div_resultado">
+            <iframe name="resultado" width="300" height="200"></iframe>
+        </div>
+    </body>
+</html>
